@@ -1,0 +1,31 @@
+{
+    "name": "sun/laravel_hprose",
+    "description": "Hprose for Laravel",
+    "keywords": ["hprose"],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "sun",
+            "email": "147755315@qq.com"
+        }
+    ],
+    "require": {
+        "php": ">=7.0.0",
+        "hprose/hprose": "v2.0.*"
+    },
+    "autoload": {
+        "psr-4": {
+            "Sun\\LaravelHprose\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Sun\\LaravelHprose\\ServiceProvider"
+            ],
+            "aliases": {
+                "LaravelHproseRouter": "Sun\\LaravelHprose\\Facades\\Router"
+            }
+        }
+    }
+}
